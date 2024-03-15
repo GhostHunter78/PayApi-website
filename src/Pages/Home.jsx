@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 import ScheduleDemo from "../Components/ScheduleDemo";
-import Header from "../Layouts/Header";
 import LightCompanies from "../Components/LightCompanies";
+import FirstCircleHome from "../SVGs/FirstCircleHome";
+import SecondCircleHome from "../SVGs/SecondCircleHome";
 
 const Home = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center pb-[80px]">
-        <img
-          className="absolute z-[-1] top-0 left-0 w-full"
-          src="/public/assets/images/mobile/first-circle-mobile.svg"
-        />
+        <FirstCircleHome />
         <img className="ml-[45px]" src="/assets/images/mobile/mobile-svg.svg" />
         <p className="fontFamily-DM heading1 text-blueHeadings font-normal mt-[-80px]">
           Start building with our APIs for absolutely free.
@@ -23,10 +21,7 @@ const Home = () => {
           </span>
         </p>
         <div className="w-full mt-[80px] relative py-[80px] bg-lightBlackDivsBg flex flex-col items-center">
-          <img
-            className="absolute z-[1] top-0 left-0 w-full"
-            src="/public/assets/images/mobile/second-circle-mobile.svg"
-          />
+          <SecondCircleHome />
           <LightCompanies />
           <h2 className="fontFamily-DM text-emailInputBg text-[32px] font-normal mt-[50px]">
             Who we work with
@@ -37,9 +32,11 @@ const Home = () => {
             developers with the tools they need to create easy and accessible
             experiences for their users.
           </p>
-          <button className="mt-[50px] text-15px font-bold fontFamily-public text-emailInputBg px-8 py-4 rounded-3xl border border-solid border-emailInputBg">
-            About Us
-          </button>
+          <Link to={"/about"}>
+            <button className="mt-[50px] text-15px font-bold fontFamily-public text-emailInputBg px-8 py-4 rounded-3xl border border-solid border-emailInputBg">
+              About Us
+            </button>
+          </Link>
         </div>
         <img src="/assets/images/mobile/script-image-mobile.svg" />
         <h2 className="fontFamily-DM heading1 text-blueHeadings font-normal text-[32px] mt-[-50px]">
