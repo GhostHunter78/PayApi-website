@@ -1,12 +1,18 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
+import Header from "./Layouts/Header";
+import Footer from "./Layouts/Footer";
+
 function App() {
   return (
     <>
-      <div className="w-full flex flex-col items-center">
-        <img
-          className="absolute z-[-1] top-0 left-0 w-full"
-          src="/public/assets/images/mobile/first-circle-mobile.svg"
-        />
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
     </>
   );
 }
