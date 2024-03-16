@@ -1,4 +1,5 @@
 export { default as BurgerIcon } from "./BurgerIcon";
+export { default as CloseIcon } from "./CloseIcon";
 export { default as CheckIcon } from "./CheckIcon";
 export { default as Facebook } from "./Facebook";
 export { default as Twitter } from "./Twitter";
