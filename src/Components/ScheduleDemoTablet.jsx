@@ -15,12 +15,12 @@ const ScheduleDemo = () => {
   return (
     <>
       <form
-        className="flex flex-col items-left gap-4 mt-6 md:hidden px-6 w-screen"
+        className="hidden md:grid md:relative md:mt-[40px] md:px-6 md:w-[445px]"
         onSubmit={handleSubmit(onSubmit)}
       >
         {errors.email ? (
           <p
-            className="text-sm pl-5 font-normal text-red-500 mb-[-10px]"
+            className="text-sm pl-5 font-normal text-red-500 mb-[-10px] md:hidden md:mb-[5px]"
             style={{ maxWidth: "300px" }}
           >
             {errors.email.message}
@@ -28,18 +28,26 @@ const ScheduleDemo = () => {
         ) : null}
         <input
           {...register("email")}
-          className="fontFamily-public px-7 pt-[10px] pb-[10px] rounded-3xl w-full text-base bg-emailInputBg focus:outline-redButton"
+          className="fontFamily-public md:pl-7 md:pr-[160px] pt-[10px] pb-[10px] rounded-3xl w-[421px] text-base bg-emailInputBg focus:outline-redButton"
           type="email"
           placeholder="Enter email address"
           style={{ boxShadow: "10px 10px 25px -10px rgba(54, 83, 107, 0.25)" }}
         />
 
         <button
-          className="fontFamily-public px-7 pt-[10px] pb-[10px] rounded-3xl w-full text-[15px] font-normal bg-redButton text-emailInputBg"
+          className="hidden md:absolute md:right-0 md:flex md:fontFamily-public md:px-7 md:pt-[12px] md:pb-[10px] md:rounded-3xl md:w-[173px] md:text-[15px] md:font-normal md:bg-redButton md:text-emailInputBg"
           type="submit"
         >
           Schedule a Demo
         </button>
+        {errors.email ? (
+          <p
+            className="text-sm pl-5 font-normal text-red-500 md:mt-[5px] md:flex"
+            style={{ maxWidth: "300px" }}
+          >
+            {errors.email.message}
+          </p>
+        ) : null}
       </form>
     </>
   );

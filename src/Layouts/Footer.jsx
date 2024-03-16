@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="w-full relative z-10 pt-[40px] pb-[55px] bg-lightBlackDivsBg flex flex-col items-center">
+      <div className="w-full relative z-10 pt-[40px] md:px-[40px] md:pt-0 md:pb-0 pb-[55px] bg-lightBlackDivsBg flex flex-col items-center md:flex-row md:justify-between">
         <Link to={"/"}>
           <img src="/assets/logo-footer.png" />
         </Link>
-        <div className="flex flex-col items-center gap-[30px] my-[40px] z-[10]">
+        <div className="flex flex-col md:flex-row items-center gap-[30px] my-[40px] z-[10]">
           <Link to={"/pricing"}>
             <p className="text-emailInputBg text-[15px] fontFamily-public font-bold opacity-[0.7]">
               Pricing

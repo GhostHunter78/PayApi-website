@@ -53,6 +53,14 @@ body {
   row-gap: 2.4375rem;
 }
 
+@media (min-width: 768px) {
+  .mobile-companies-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: auto;
+    row-gap: 2.4375rem;
+  }
+}
+
 .grid-columns-1 {
   display: grid;
   align-content: center;

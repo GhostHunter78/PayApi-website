@@ -2,7 +2,7 @@ const FooterCircleHome = () => {
   return (
     <>
       <svg
-        className="absolute z-[0] bottom-0 left-0 w-full"
+        className="absolute z-[0] bottom-0 left-0 w-full md:hidden"
         width="375"
         height="176"
         viewBox="0 0 375 176"

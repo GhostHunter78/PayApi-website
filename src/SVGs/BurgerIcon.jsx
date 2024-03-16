@@ -2,7 +2,7 @@ const BurgerIcon = () => {
   return (
     <>
       <svg
-        className="z-[10]"
+        className="z-[10] md:hidden"
         width="28"
         height="17"
         viewBox="0 0 28 17"

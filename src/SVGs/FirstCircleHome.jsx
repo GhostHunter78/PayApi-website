@@ -2,7 +2,7 @@ const FirstCircleHome = () => {
   return (
     <>
       <svg
-        className="absolute z-[-1] top-0 left-0 w-full"
+        className="absolute z-[-1] top-0 left-0 w-full md:hidden"
         width="375"
         height="230"
         viewBox="0 0 375 230"
