@@ -16,7 +16,7 @@ const ContactForm = () => {
   return (
     <>
       <form
-        className=" mt-[50px] px-6 w-screen"
+        className=" mt-[50px] px-6 w-screen  md:w-[450px]"
         onSubmit={handleSubmit(onSubmit)}
       >
         <input

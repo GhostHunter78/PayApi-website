@@ -8,7 +8,7 @@ const Pricing = () => {
     <>
       <PricingCircle />
       <img
-        className="absolute top-0 right-0 z-[-1]"
+        className=" hidden absolute top-0 right-0 z-[-1]"
         src="/assets/images/mobile/prising-circle-tablet.png"
       />
       <div className="flex flex-col items-center w-full px-6 pb-[80px]">

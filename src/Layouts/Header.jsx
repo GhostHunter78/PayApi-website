@@ -44,19 +44,13 @@ const Header = () => {
         </Link>
         <div className="hidden md:flex md:items-center md:gap-[40px]">
           <Link to="/pricing">
-            <p className="text-blueHeadings font-bold" onClick={closeMenu}>
-              Pricing
-            </p>
+            <p className="text-blueHeadings font-bold">Pricing</p>
           </Link>
           <Link to="/about">
-            <p className="text-blueHeadings font-bold" onClick={closeMenu}>
-              About
-            </p>
+            <p className="text-blueHeadings font-bold">About</p>
           </Link>
           <Link to="/contact">
-            <p className="text-blueHeadings font-bold" onClick={closeMenu}>
-              Contact
-            </p>
+            <p className="text-blueHeadings font-bold">Contact</p>
           </Link>
           <Link to="/contact">
             <button
@@ -80,16 +74,24 @@ const Header = () => {
             </div>
             <div className="w-full border border-l-0 border-r-0 border-b-0 border-t-gray-300"></div>
             <Link to="/pricing">
-              <p className="text-white opacity-[0.7]">Pricing</p>
+              <p className="text-white opacity-[0.7]" onClick={closeMenu}>
+                Pricing
+              </p>
             </Link>
             <Link to="/about">
-              <p className="text-white opacity-[0.7]">About</p>
+              <p className="text-white opacity-[0.7]" onClick={closeMenu}>
+                About
+              </p>
             </Link>
             <Link to="/contact">
-              <p className="text-white opacity-[0.7]">Contact</p>
+              <p className="text-white opacity-[0.7]" onClick={closeMenu}>
+                {" "}
+                Contact
+              </p>
             </Link>
             <Link to="/contact">
               <button
+                onClick={closeMenu}
                 className="fontFamily-public md:ml-[40px] px-7 pt-[10px] pb-[10px] rounded-3xl w-full text-[15px] font-normal bg-redButton text-emailInputBg"
                 type="submit"
               >
