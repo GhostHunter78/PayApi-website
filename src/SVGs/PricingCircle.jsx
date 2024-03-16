@@ -2,7 +2,7 @@ const PricingCircle = () => {
   return (
     <>
       <svg
-        className="absolute top-0 right-0 z-[-1]"
+        className="absolute top-0 right-0 z-[-1] md:hidden"
         width="301"
         height="136"
         viewBox="0 0 301 136"
