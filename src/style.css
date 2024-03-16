@@ -51,3 +51,11 @@ body {
   column-gap: 1.875rem;
   row-gap: 2.4375rem;
 }
+
+.grid-columns-1 {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+}
