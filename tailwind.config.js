@@ -6,6 +6,7 @@ export default {
         blueHeadings: "#36536b",
         emailInputBg: "#fbfcfe",
         redButton: "#ba4270",
+        redButtonHover: "#da6d97",
         grayWords: "#6c8294",
         lightBlackDivsBg: "#1b262f",
         bodyBackground: "#edf3f8",

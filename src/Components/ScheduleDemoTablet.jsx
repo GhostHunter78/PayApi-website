@@ -15,7 +15,7 @@ const ScheduleDemo = () => {
   return (
     <>
       <form
-        className="hidden md:grid md:relative md:mt-[40px] md:px-6 md:w-[445px]"
+        className="hidden md:grid md:relative md:mt-[40px] md:px-6 md:w-[445px] lg:px-0 lg:mt-0"
         onSubmit={handleSubmit(onSubmit)}
       >
         {errors.email ? (
@@ -35,7 +35,7 @@ const ScheduleDemo = () => {
         />
 
         <button
-          className="hidden md:absolute md:right-0 md:flex md:fontFamily-public md:px-7 md:pt-[12px] md:pb-[10px] md:rounded-3xl md:w-[173px] md:text-[15px] md:font-normal md:bg-redButton md:text-emailInputBg"
+          className="hidden md:absolute md:right-0 md:flex md:fontFamily-public md:px-7 md:pt-[12px] md:pb-[10px] md:rounded-3xl md:w-[173px] md:text-[15px] md:font-normal md:bg-redButton md:text-emailInputBg lg:hover:bg-redButtonHover hover:transition hover:duration-300"
           type="submit"
         >
           Schedule a Demo
