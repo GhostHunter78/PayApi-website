@@ -16,7 +16,7 @@ const ContactForm = () => {
   return (
     <>
       <form
-        className=" mt-[50px] px-6 w-screen  md:w-[450px]"
+        className=" mt-[50px] px-6 w-screen  md:w-[450px] lg:px-0"
         onSubmit={handleSubmit(onSubmit)}
       >
         <input
@@ -103,7 +103,7 @@ const ContactForm = () => {
         </label>
         <button
           type="submit"
-          className=" mt-[37px] text-15px font-bold fontFamily-public text-blueHeadings px-10 py-2 rounded-3xl border border-solid border-blueHeadings"
+          className=" mt-[37px] text-15px font-bold fontFamily-public text-blueHeadings px-10 py-2 rounded-3xl border border-solid border-blueHeadings hover:bg-blueHeadings hover:text-white transition duration-300"
         >
           Submit
         </button>
