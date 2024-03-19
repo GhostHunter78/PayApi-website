@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-full relative z-10 pt-[40px] md:px-[40px] md:pt-0 md:pb-0 pb-[55px] bg-lightBlackDivsBg flex flex-col items-center md:flex-row md:justify-between lg:px-[165px]">
-        <div className="lg:flex lg:items-center lg:gap-[65px]">
+        <div className="md:flex md:items-center md:gap-[65px]">
           <Link to={"/"}>
             <img src="/assets/logo-footer.png" />
           </Link>
